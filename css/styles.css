@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
-.h1 {
+body {
+    width: 100%;
+}
+.boldheadline {
     color: #2E2E2E;
     width: 400px;
     height: 51px;
@@ -11,7 +14,7 @@
     padding-left: 49px;
     padding-right: 49px;
 }
-.h6 {
+.lessboldheadline {
     color: #2E2E2E;
     width: 400px;
     height: 20px;
@@ -22,7 +25,7 @@
     padding-left: 51px;
     padding-right: 51px;
 }
-.p {
+.snippet {
     color: #101315;
     width: 960px;
     font-family: 'Oxygen';
@@ -52,14 +55,14 @@
 .contact {
     margin-right: 200px;
 }
-#menu {
+.menu {
     background-image: url('C:/Users/iatro/Web/image1.jpg');
+    background-size: 100%;
     background-position-y: -1000px;
-    width: 1440px;
     height: 89px;
     margin-top: 135px;
 }
-#menu li {
+.menu li {
     position: relative;
     top: 28px;
     color: white;
