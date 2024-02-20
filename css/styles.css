@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+.h1 {
+    color: #2E2E2E;
+    width: 400px;
+    height: 51px;
+    font-family: 'Lora';
+    font-size: 50px;
+    margin-left: 471px;
+    margin-right: 471px;
+    padding-left: 49px;
+    padding-right: 49px;
+}
+.h6 {
+    color: #2E2E2E;
+    width: 400px;
+    height: 20px;
+    font-family: 'Oxygen';
+    font-size: 17px;
+    margin-left: 468px;
+    margin-right: 468px;
+    padding-left: 51px;
+    padding-right: 51px;
+}
+.p {
+    color: #101315;
+    width: 960px;
+    font-family: 'Oxygen';
+    font-size: 24px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+.up {
+    margin-top: 140px;
+}
+.line {
+    display: inline;
+    height: 20px;
+    font-family: 'Oxygen';
+    font-size: 11px;
+    margin-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.escape {
+    height: 26px; 
+    font-size: 26px; 
+    font-family: 'Lora'; 
+    margin-left: 200px; 
+    margin-right: 470px;
+}
+.contact {
+    margin-right: 200px;
+}
+#menu {
+    background-image: url('C:/Users/iatro/Web/image1.jpg');
+    background-position-y: -1000px;
+    width: 1440px;
+    height: 89px;
+    margin-top: 135px;
+}
+#menu li {
+    position: relative;
+    top: 28px;
+    color: white;
+}
