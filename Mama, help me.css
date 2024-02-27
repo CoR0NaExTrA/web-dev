@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+.main {
+    background-color: #F7F7F7;
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.navigate-menu {
+    width: 940px;
+    height: 40px;
+}
+.navigate-list {
+
+}
+.header-navigate-elements {
+    
+}
