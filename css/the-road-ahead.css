@@ -25,7 +25,7 @@ body {
     padding-left: 51px;
     padding-right: 51px;
 }
-.snippet {
+.main-text {
     color: #101315;
     width: 960px;
     font-family: 'Oxygen';
@@ -92,10 +92,14 @@ body {
 .navigate-menu {
     width: 940px;
     height: 34px;
-    
+    display: inline;
 
 }
 .footer-navigate-elements {
     color: white;
     opacity: 0.6;
+}
+
+.navigate-elements {
+    display: inline;
 }
