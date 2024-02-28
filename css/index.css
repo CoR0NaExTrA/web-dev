@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item_header, .item_footer {
+    text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+.item_footer {
+    opacity: 0.6;
+}
+
+.header__navigate {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+    z-index: 3;
+}
+
+.header, .footer {
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    z-index: 1;
+}
+
+.header {
+    background-image: url('C:/Users/iatro/Web/CoR0NaEx/img-main/header-background.jpg');
+    height: 500px;
+}
+
+.header__filling-area {
+    position: relative;
+    display: flex;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__operative-phrases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 67%;
+    height: 159px;
+}
+
+.header__operative-phrases_top {
+    display: flex;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 51px;
+    color: #FFFFFF;
+}
+
+.header__operative-phrases_bot {
+    display: flex;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.header__operative-phrases-btn {
+    display: flex;
+}
+
+.header__operative-phrases-btn_txt {
+    
+    color: #FFFFFF;
+}
+
+.categories-menu  {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+
+.categories-menu__list {
+    display: flex;
+    width: 67%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categories-menu__list_item {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    color: #768088;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 20px;
+}
+
+.footer {
+    background-image: url('C:/Users/iatro/Web/CoR0NaEx/img-main/footer-background-img.jpg');
+    height: 89px;
+}
+
+.footer__navigate {
+    z-index: 2;
+    background: linear-gradient(to right, rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6));
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate-menu {
+    width: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigate-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigate-menu__list_item {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
