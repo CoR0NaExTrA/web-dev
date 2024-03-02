@@ -8,7 +8,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Open coffee.html",
             "file": "c:\\Users\\iatro\\Web\\CoR0NaEx\\index.html"
         }
     ]
