@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open coffee.html",
-            "file": "c:\\Users\\iatro\\Web\\CoR0NaEx\\index.html"
+            "name": "Open the-road-ahead.html",
+            "file": "c:\\Users\\iatro\\Web\\CoR0NaEx\\the-road-ahead.html"
         }
     ]
 }

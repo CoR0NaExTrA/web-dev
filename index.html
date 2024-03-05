@@ -2,86 +2,176 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="C:\Users\iatro\Web\CoR0NaEx\css\index.css">
-        <title>
-            Главная страница блога
-        </title>
+        <title>Главная страница блога</title>
+        <link  rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header class="header">
             <div class="header__navigate">
-                <div class="navigate-menu">
-                    <img src="C:\Users\iatro\Web\CoR0NaEx\img-main\Esc1.svg" />
-                    <nav class="navigate-menu__list">
-                        <a href="#" class="navigate-menu__list_item"><span class="item_header">home</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_header">categories</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_header">about</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_header">contact</span></a>
+                <div class="navigate">
+                    <img src="img-main/Esc1.svg" alt="logo-top">
+                    <nav class="navigate__list">
+                        <a href="#" class="navigate__list-item"><span class="item_header">home</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_header">categories</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_header">about</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_header">contact</span></a>
                     </nav>
-                </div>
+                </div> 
             </div>
-            <div class="header__filling-area">
-                <div class="header__operative-phrases">
-                    <span class="header__operative-phrases_top">Let's do it together.</span>
-                    <span class="header__operative-phrases_bot">We travel the world in search of stories. Come along for the ride.</span>
-                    <div class="header__operative-phrases-btn">
-                        <span class="header__operative-phrases-btn_txt">View Latest Posts</span>
+            <div class="header__content-area">
+                <div class="header__main-filling">
+                    <span class="header__main-filling_top">Let's do it together.</span>
+                    <span class="header__main-filling_bot">We travel the world in search of stories. Come along for the ride.</span>
+                    <div class="header__latest-posts-btn">
+                        <span class="header__latest-posts-btn_txt">View Latest Posts</span>
                     </div>
                 </div>
             </div>
         </header>
         <div class="categories-menu">
-            <nav class="categories-menu__list">
-                <a href="#" class="categories-menu__list_item">Nature</a>
-                <a href="#" class="categories-menu__list_item">Photography</a>
-                <a href="#" class="categories-menu__list_item">Relaxation</a>
-                <a href="#" class="categories-menu__list_item">Vacation</a>
-                <a href="#" class="categories-menu__list_item">Travel</a>
-                <a href="#" class="categories-menu__list_item">Adventure</a>
+            <nav class="categories-menu__navigate">
+                <a href="#" class="categories-menu__navigate_item">Nature</a>
+                <a href="#" class="categories-menu__navigate_item">Photography</a>
+                <a href="#" class="categories-menu__navigate_item">Relaxation</a>
+                <a href="#" class="categories-menu__navigate_item">Vacation</a>
+                <a href="#" class="categories-menu__navigate_item">Travel</a>
+                <a href="#" class="categories-menu__navigate_item">Adventure</a>
             </nav>
         </div>
         <div class="main-content">
-            <div class="featured-posts">
-                <div class="main-categories">
-                    <span class="main-categories_header_text">Featured Posts</span>
-                    <div class="posts-header-underline"></div>
+            <div class="feature-posts">
+                <div class="main-category__header">
+                    <span class="main-category__header_txt">Featured Posts</span>
+                    <div class="posts_header_underline"></div>
                 </div>
-                <article class="featured-posts__item_first">
-                    <h2 class="article-description__main-text">The Road Ahead</h2>
-                    <span class="article-description__bottom-text">The road ahead might be paved - it might not be.</span>
-                    <div>
-                        <img class="author-info__img" src="C:/Users/iatro/Web/CoR0NaEx/img-main/mat-vogels-img.jpg"/>
+                <article class="feature-posts__item_img_first">
+                    <h2 class="article-info__main-txt">The Road Ahead</h2>
+                    <span class="article-info__bot-txt">The road ahead might be paved - it might not be.</span>
+                    <div class="article-info">
+                        <div class="author-info">
+                            <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
+                            <span class="author-info__txt">Mat Vogels</span>
+                        </div>
                         <span class="article-info__date">September 25, 2015</span>
                     </div>
                 </article>
-                <article class="featured-posts__item_second">
-                    <div class="featured-posts__tag">
-                        <span class="featured-posts__tag_text">Adventure</span>
+                <article class="feature-posts__item_img_second">
+                    <div class="feature-posts__tag">
+                        <span class="feature-posts__tag_txt">Adventure</span>
                     </div>
-                    <h2 class="article-description__main-text">From Top Down</h2>
-                    <span class="article-description__bottom-text">Once a year, go someplace you've never been before.</span>
+                    <h2 class="article-info__main-txt">From Top Down</h2>
+                    <span class="article-info__bot-txt">Once a year, go someplace you've never been before.</span>
                     <div class="article-info">
                         <div class="author-info">
-                            <img class="author-info__img" src="C:/Users/iatro/Web/CoR0NaEx/img-main/william-wong-img.jpg" alt="image"/>
-                            <span></span>
+                            <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
+                            <span class="author-info__txt">William Wong</span>
                         </div>
                         <span class="article-info__date">September 25, 2015</span>
+                    </div>
+                </article>
+            </div>
+            <div class="most-recent-posts">
+                <div class="main-category__header">
+                    <span class="main-category__header_txt">Most Recent</span>
+                    <div class="posts_header_underline"></div>
+                </div>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_img" src="img-main/still-standing-tall-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Still Standing Tall</h3>
+                        <span class="most-recent__bot-text">Life begins at the end of your comfort zone.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">William Wong</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_img" src="img-main/sunny-side-up-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Sunny Side Up</h3>
+                        <span class="most-recent__bot-txt">No place is ever as bad as they tell you it's going to be.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">Mat Vogels</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_img" src="img-main/water-falls-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Water Falls</h3>
+                        <span class="most-recent__bot-txt">We travel not to escape life, but for life not to escape us.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">Mat Vogels</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_image" src="img-main/throught-the-mist-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Through the Mist</h3>
+                        <span class="most-recent__bot-txt">Travel makes you see what a tiny place you occupy in the world.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">William Wong</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_img" src="img-main/awaken-early-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Awaken Early</h3>
+                        <span class="most-recent__bottom-txt">Not all those who wander are lost.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">Mat Vogels</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="most-recent__item">
+                    <img class="most-recent__item_img" src="img-main/try-it-always-img.jpg" alt="img">
+                    <div class="most-recent__item_content-area">
+                        <h3 class="most-recent__main-txt">Try it Always</h3>
+                        <span class="most-recent__bot-txt">The world is a book, and those who do not travel read only one page.</span>
+                        <div class="most-recent__item_author-info">
+                            <div class="most-recent__author-info">
+                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
+                                <span class="most-recent__author-info_txt">Mat Vogels</span>
+                                <span class="most-recent__author-info_date">9/25/2015</span>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>
         </div>
         <footer class="footer">
             <div class="footer__navigate">
-                <div class="navigate-menu">
-                    <img src="C:\Users\iatro\Web\CoR0NaEx\img-main\Esc1.svg" />
-                    <nav class="navigate-list">
-                        <a href="#" class="navigate-menu__list_item"><span class="item_footer">home</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_footer">categories</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_footer">about</span></a>
-                        <a href="#" class="navigate-menu__list_item"><span class="item_footer">contact</span></a>
+                <div class="navigate">
+                    <img src="img-main/Esc1.svg" alt="logo-bot">
+                    <nav class="navigate__list">
+                        <a href="#" class="navigate__list-item"><span class="item_footer">home</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">categories</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">about</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">contact</span></a>
                     </nav>
-                </div>
+                </div> 
             </div>
         </footer>
     </body>
