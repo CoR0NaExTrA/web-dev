@@ -27,7 +27,7 @@
 
 .header {
     height: 500px;
-    background-image: url(../img-main/header-background.jpg);
+    background-image: url(../images/header-background.jpg);
 }
 
 .header__content-area {
@@ -385,7 +385,7 @@
 
 .footer {
     height: 90px;
-    background-image: url(../img-main/footer-background-img.jpg);
+    background-image: url(../images/footer-background-img.jpg);
 }
 
 .footer__navigate {
