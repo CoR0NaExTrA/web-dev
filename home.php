@@ -64,8 +64,8 @@ $feature_posts = [
     ],
     [
         'background_post' => 'img-main/from-top-down-img.jpg',
-        'tag_type' => 'none',
-        'tag_text' => 'none',
+        'tag_type' => 'adventure',
+        'tag_text' => 'Adventure',
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace youve never been before.',
         'img_modifier' => 'img-main/william-wong-img.jpg',
