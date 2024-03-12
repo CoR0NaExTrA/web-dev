@@ -11,7 +11,7 @@ $posts = [
     [
         'background_post' => 'img-main/sunny-side-up-img.jpg',
         'title' => 'Sunny Side Up',
-        'subtitle' => 'No place is ever as bad as they tell you it''s going to be.',
+        'subtitle' => 'No place is ever as bad as they tell you its going to be.',
         'img_modifier' => 'img-main/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
