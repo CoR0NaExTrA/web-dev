@@ -1,4 +1,4 @@
-<article class="feature-posts__item_img_second" style="background-image: url(<?= $feature_post['background_post'] ?>)">
+<article class="feature-posts__item_img" style="background-image: url(<?= $feature_post['background_post'] ?>)">
         <div class="feature-posts__tag__<?= $feature_post['tag_type'] ?>">
             <span class="feature-posts__tag_txt">A<?= $feature_post['tag_text'] ?></span>
         </div>

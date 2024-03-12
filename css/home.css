@@ -152,7 +152,7 @@
     align-items: center;
 }
 
-.feature-posts__item_img_first, .feature-posts__item_img_second {
+.feature-posts__item_img {
     width: 460px;
     height: 280px;
     border-radius: 3px;
