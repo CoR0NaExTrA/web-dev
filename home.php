@@ -123,8 +123,8 @@ $feature_posts = [
                     <div class="posts_header_underline"></div>
                 </div>
                 <?php 
-                    foreach ($featured_posts as $featured_post) {
-                        include 'featured-post-preview.php';
+                    foreach ($feature_posts as $featured_post) {
+                        include 'featured_post_preview.php';
                     }
                 ?>
             </div>
@@ -135,7 +135,7 @@ $feature_posts = [
                 </div>
                 <?php 
                     foreach ($posts as $post) {
-                        include 'post-preview.php';
+                        include 'post_preview.php';
                     }
                 ?>
             </div>
