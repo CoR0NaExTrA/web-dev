@@ -124,7 +124,7 @@ $feature_posts = [
                 </div>
                 <?php 
                     foreach ($feature_posts as $feature_post) {
-                        include 'featured_post_preview.php';
+                        include 'feature_post_preview.php';
                     }
                 ?>
             </div>
