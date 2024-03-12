@@ -244,7 +244,7 @@
     display: flex;
 }
 
-.feature-posts__tag {
+.feature-posts__tag__adventure {
     width: 87px;
     height: 26px;
     border-radius: 2px;
@@ -254,6 +254,10 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: auto;
+}
+
+.feature-posts__tag__none {
+    opacity: 0;
 }
 
 .feature-posts__tag_txt {
