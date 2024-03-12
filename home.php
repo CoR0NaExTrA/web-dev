@@ -123,7 +123,7 @@ $feature_posts = [
                     <div class="posts_header_underline"></div>
                 </div>
                 <?php 
-                    foreach ($feature_posts as $featured_post) {
+                    foreach ($feature_posts as $feature_post) {
                         include 'featured_post_preview.php';
                     }
                 ?>
