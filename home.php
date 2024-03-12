@@ -1,3 +1,81 @@
+<?php
+$posts = [
+    [
+        'background_post' => 'img-main/still-standing-tall-img.jpg',
+        'title' => 'Still Standing Tall',
+        'subtitle' => 'Life begins at the end of your comfort zone.',
+        'img_modifier' => 'img-main/william-wong-img.jpg',
+        'author' => 'William Wong',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/sunny-side-up-img.jpg',
+        'title' => 'Sunny Side Up',
+        'subtitle' => 'No place is ever as bad as they tell you it''s going to be.',
+        'img_modifier' => 'img-main/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/water-falls-img.jpg',
+        'title' => 'Water Falls',
+        'subtitle' => 'We travel not to escape life, but for life not to escape us.',
+        'img_modifier' => 'img-main/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/throught-the-mist-img.jpg',
+        'title' => 'Through the Mist',
+        'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
+        'img_modifier' => 'img-main/william-wong-img.jpg',
+        'author' => 'William Wong',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/awaken-early-img.jpg',
+        'title' => 'Awaken Early',
+        'subtitle' => 'Not all those who wander are lost.',
+        'img_modifier' => 'img-main/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/try-it-always-img.jpg',
+        'title' => 'Try it Always',
+        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
+        'img_modifier' => 'img-main/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => '9/25/2015'
+    ],
+];
+
+
+$feature_posts = [
+    [
+        'background_post' => 'img-main/the-road-ahead-img.jpg',
+        'tag_type' => 'none',
+        'tag_text' => 'none',
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'img_modifier' => 'img-main/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => '9/25/2015'
+    ],
+    [
+        'background_post' => 'img-main/from-top-down-img.jpg',
+        'tag_type' => 'none',
+        'tag_text' => 'none',
+        'title' => 'From Top Down',
+        'subtitle' => 'Once a year, go someplace you''ve never been before.',
+        'img_modifier' => 'img-main/william-wong-img.jpg',
+        'author' => 'William Wong',
+        'post_date' => '9/25/2015'
+    ],
+];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -44,121 +122,22 @@
                     <span class="main-category__header_txt">Featured Posts</span>
                     <div class="posts_header_underline"></div>
                 </div>
-                <article class="feature-posts__item_img_first">
-                    <h2 class="article-info__main-txt">The Road Ahead</h2>
-                    <span class="article-info__bot-txt">The road ahead might be paved - it might not be.</span>
-                    <div class="article-info">
-                        <div class="author-info">
-                            <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
-                            <span class="author-info__txt">Mat Vogels</span>
-                        </div>
-                        <span class="article-info__date">September 25, 2015</span>
-                    </div>
-                </article>
-                <article class="feature-posts__item_img_second">
-                    <div class="feature-posts__tag">
-                        <span class="feature-posts__tag_txt">Adventure</span>
-                    </div>
-                    <h2 class="article-info__main-txt">From Top Down</h2>
-                    <span class="article-info__bot-txt">Once a year, go someplace you've never been before.</span>
-                    <div class="article-info">
-                        <div class="author-info">
-                            <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
-                            <span class="author-info__txt">William Wong</span>
-                        </div>
-                        <span class="article-info__date">September 25, 2015</span>
-                    </div>
-                </article>
+                <?php 
+                    foreach ($featured_posts as $featured_post) {
+                        include 'featured-post-preview.php';
+                    }
+                ?>
             </div>
             <div class="most-recent-posts">
                 <div class="main-category__header">
                     <span class="main-category__header_txt">Most Recent</span>
                     <div class="posts_header_underline"></div>
                 </div>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/still-standing-tall-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Still Standing Tall</h3>
-                        <span class="most-recent__bot-txt">Life begins at the end of your comfort zone.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">William Wong</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/sunny-side-up-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Sunny Side Up</h3>
-                        <span class="most-recent__bot-txt">No place is ever as bad as they tell you it's going to be.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">Mat Vogels</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/water-falls-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Water Falls</h3>
-                        <span class="most-recent__bot-txt">We travel not to escape life, but for life not to escape us.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">Mat Vogels</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/throught-the-mist-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Through the Mist</h3>
-                        <span class="most-recent__bot-txt">Travel makes you see what a tiny place you occupy in the world.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/william-wong-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">William Wong</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/awaken-early-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Awaken Early</h3>
-                        <span class="most-recent__bot-txt">Not all those who wander are lost.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">Mat Vogels</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="most-recent__item">
-                    <img class="most-recent__item_img" src="img-main/try-it-always-img.jpg" alt="img">
-                    <div class="most-recent__item_content-area">
-                        <h3 class="most-recent__main-txt">Try it Always</h3>
-                        <span class="most-recent__bot-txt">The world is a book, and those who do not travel read only one page.</span>
-                        <div class="most-recent__item_author-info">
-                            <div class="most-recent__author-info">
-                                <img class="author-info__img" src="img-main/mat-vogels-img.jpg" alt="img">
-                                <span class="most-recent__author-info_txt">Mat Vogels</span>
-                                <span class="most-recent__author-info_date">9/25/2015</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                <?php 
+                    foreach ($posts as $post) {
+                        include 'post-preview.php';
+                    }
+                ?>
             </div>
         </div>
     </body>

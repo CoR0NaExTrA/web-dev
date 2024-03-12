@@ -166,14 +166,6 @@
     flex-wrap: wrap;
 }
 
-.feature-posts__item_img_first {
-    background-image: url(../img-main/the-road-ahead-img.jpg);
-}
-
-.feature-posts__item_img_second {
-    background-image: url(../img-main/from-top-down-img.jpg);
-}
-
 .article-info {
     width: 420px;
     height: 35px;
