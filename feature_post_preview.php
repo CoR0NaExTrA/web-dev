@@ -6,7 +6,7 @@
         <span class="article-info__bot-txt"><?= $feature_post['subtitle'] ?></span>
         <div class="article-info">
             <div class="author-info">
-                <img class="author-info__img" src="<?= $feature_post['img_modifier'] ?>" alt="img">
+                <img class="author-info__img" src="<?= $feature_post['img_author'] ?>" alt="img">
                 <span class="author-info__txt"><?= $feature_post['author'] ?></span>
             </div>
             <span class="article-info__date"><?= $feature_post['post_date'] ?></span>

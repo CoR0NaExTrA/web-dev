@@ -4,7 +4,7 @@ $posts = [
         'background_post' => 'images/still-standing-tall-img.jpg',
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
-        'img_modifier' => 'images/william-wong-img.jpg',
+        'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
         'post_date' => '9/25/2015'
     ],
@@ -12,7 +12,7 @@ $posts = [
         'background_post' => 'images/sunny-side-up-img.jpg',
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you its going to be.',
-        'img_modifier' => 'images/mat-vogels-img.jpg',
+        'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
     ],
@@ -20,7 +20,7 @@ $posts = [
         'background_post' => 'images/water-falls-img.jpg',
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
-        'img_modifier' => 'images/mat-vogels-img.jpg',
+        'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
     ],
@@ -28,7 +28,7 @@ $posts = [
         'background_post' => 'images/throught-the-mist-img.jpg',
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
-        'img_modifier' => 'images/william-wong-img.jpg',
+        'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
         'post_date' => '9/25/2015'
     ],
@@ -36,7 +36,7 @@ $posts = [
         'background_post' => 'images/awaken-early-img.jpg',
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
-        'img_modifier' => 'images/mat-vogels-img.jpg',
+        'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
     ],
@@ -44,7 +44,7 @@ $posts = [
         'background_post' => 'images/try-it-always-img.jpg',
         'title' => 'Try it Always',
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
-        'img_modifier' => 'images/mat-vogels-img.jpg',
+        'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
     ],
@@ -58,7 +58,7 @@ $feature_posts = [
         'tag_text' => 'none',
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => 'images/mat-vogels-img.jpg',
+        'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
         'post_date' => '9/25/2015'
     ],
@@ -68,7 +68,7 @@ $feature_posts = [
         'tag_text' => 'Adventure',
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace youve never been before.',
-        'img_modifier' => 'images/william-wong-img.jpg',
+        'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
         'post_date' => '9/25/2015'
     ],
