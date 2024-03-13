@@ -41,3 +41,7 @@ echo 'URL: ' . $url . '</br>';
 echo 'IP Address: ' . $ipAddress . '</br>';
 
 echo '<br>---------------<br>';
+
+foreach ($_GET as $key => $value) {
+  echo "{$key} = {$value} </br>";
+}
