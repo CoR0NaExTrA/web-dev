@@ -13,5 +13,5 @@ echo "Timestamp запроса {$requestTime} <br>";
 $now = date("Y-m-d H:i:s");
 echo "Текущая дата и время: {$now} <br>";
 
-$requestDateTime = date("Y-m-d H:i:s", $requestTime);
+$requestDateTime = date("Y-m-d H:i:s", 1703838399);
 echo "Дата и время запроса: {$requestDateTime} <br>";
