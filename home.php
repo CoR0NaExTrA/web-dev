@@ -5,7 +5,7 @@ $posts = [
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
         'img_author' => 'images/william-wong-img.jpg',
-        'author' => 'William Wong',
+        'author' => 'William',
         'post_date' => '9/25/2015'
     ],
     [
