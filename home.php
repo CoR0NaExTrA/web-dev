@@ -81,7 +81,7 @@ $feature_posts = [
     <head>
         <meta charset="utf-8">
         <title>Главная страница блога</title>
-        <link  rel="stylesheet" href="css/home.css">
+        <link  rel="stylesheet" href="styles/home.css">
     </head>
     <body>
         <header class="header">
