@@ -26,4 +26,4 @@ $timestampDatetime = strtotime($now);
 echo "Текущий timestamp: {$timestampDatetime} <br>";
     
 $timestampNextWeek = strtotime('+1 week 2 days 4 hours 2 seconds');
-echo "Какой-то timestamp на след неделе {$timestampNextWeek} <
+echo "Какой-то timestamp на след неделе {$timestampNextWeek} <br>";
