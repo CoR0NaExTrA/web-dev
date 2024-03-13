@@ -9,3 +9,6 @@ echo '<br>---------------<br>';
 // 2. вывести время запроса
 $requestTime = $_SERVER['REQUEST_TIME'];
 echo "Timestamp запроса {$requestTime} <br>";
+
+$now = date("Y-m-d H:i:s");
+echo "Текущая дата и время: {$now} <br>";
