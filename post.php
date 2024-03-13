@@ -24,7 +24,7 @@
         <h6 class="lessboldheadline">
             The road ahead might be paved - it might not be.
         </h6>
-        <img src="images/image.jpg" width="100%" height="534" alt="image">
+        <img src="images/the-road-ahead-img.jpg" width="100%" height="534" alt="image">
         <div class="main-text">
             <p>
                 Dark spruce forest frowned on either side the frozen waterway. 
