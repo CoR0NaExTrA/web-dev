@@ -58,7 +58,7 @@
                 pitting themselves against the might of a world as remote and alien and pulseless as the abysses of space.
             </p>
         </div>
-        <footer class="footer">
+        <footer class="footer" style="background-image: url(images/footer-background-img.jpg);" >
             <div class="footer-area">
                 <nav class="footer-navigate__list">
                     <a class="footer-navigate-logo"><img src="images/Esc1.svg" alt="logo-top"/></a>
