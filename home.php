@@ -140,5 +140,18 @@ $feature_posts = [
                 ?>
             </div>
         </div>
+        <footer class="footer">
+            <div class="footer__navigate">
+                <div class="navigate">
+                    <img src="images/Esc1.svg" alt="logo-bot">
+                    <nav class="navigate__list">
+                        <a href="#" class="navigate__list-item"><span class="item_footer">home</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">categories</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">about</span></a>
+                        <a href="#" class="navigate__list-item"><span class="item_footer">contact</span></a>
+                    </nav>
+                </div> 
+            </div>
+        </footer>
     </body>
 </html>
