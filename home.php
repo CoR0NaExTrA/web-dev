@@ -59,7 +59,7 @@ $posts = [
 
 $feature_posts = [
     [
-        'id' => 1,
+        'id' => 7,
         'background_post' => 'images/the-road-ahead-img.jpg',
         'tag_type' => 'none',
         'tag_text' => 'none',
@@ -70,7 +70,7 @@ $feature_posts = [
         'post_date' => '9/25/2015'
     ],
     [
-        'id' => 2,
+        'id' => 8,
         'background_post' => 'images/from-top-down-img.jpg',
         'tag_type' => 'adventure',
         'tag_text' => 'Adventure',
@@ -78,7 +78,7 @@ $feature_posts = [
         'subtitle' => 'Once a year, go someplace youve never been before.',
         'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
-        'post_date' => '9/25/2015'
+        'post_date' => mktime(9, 24, 57, 5, 23, 1995) . '<br>';
     ],
 ];
 
