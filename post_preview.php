@@ -7,7 +7,7 @@
                 <div class="most-recent__author-info">
                     <img class="author-info__img" src="<?= $post['img_author']?>" alt="img">
                     <span class="most-recent__author-info_txt"><?= $post['author']?></span>
-                    <span class="most-recent__author-info_date"><?= $post['post_date']?></span>
+                    <span class="most-recent__author-info_date"><?= date("m-d-Y", 'post_date')?></span>
                 </div>
             </div>
         </div>
