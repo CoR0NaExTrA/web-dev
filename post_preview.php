@@ -10,6 +10,5 @@
                     <span class="most-recent__author-info_date"><?= $post['post_date']?></span>
                 </div>
             </div>
-            <a title='<?= $post['title'] ?>' href='/post?id=<?= $post['id'] ?>'><?= $post['subtitle'] ?></a>
         </div>
 </article>

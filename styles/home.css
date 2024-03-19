@@ -339,6 +339,7 @@
 }
 
 .most-recent__bot-txt {
+    text-decoration: none;
     padding-left: 13px;
     font-family: 'Oxygen', sans-serif;
     font-size: 13px;
