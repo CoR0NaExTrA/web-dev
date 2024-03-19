@@ -78,7 +78,7 @@ $feature_posts = [
         'subtitle' => 'Once a year, go someplace youve never been before.',
         'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
-        'post_date' => mktime(9, 24, 57, 5, 23, 1995) . '<br>';
+        'post_date' => mktime(9, 24, 57, 5, 23, 1995) . '<br>'
     ],
 ];
 
