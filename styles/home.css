@@ -187,7 +187,6 @@
 }
 
 .article-info__bot-txt {
-    text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -348,6 +347,7 @@
     line-height: 19px;
     letter-spacing: 0em;
     display: flex;
+    color: #7a7a7a;
 }
 
 .most-recent__author-info {
