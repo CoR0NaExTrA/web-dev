@@ -1,9 +1,9 @@
 <?php
     $post = [
-        'id' = 1,
-        'title' = 'The Road Ahead',
-        'subtitle' = 'The road ahead might be paved - it might not be.',
-        'text' = 'Dark spruce forest frowned on either side the frozen waterway. 
+        'id' => 1,
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'text' => 'Dark spruce forest frowned on either side the frozen waterway. 
         The trees had been stripped by a recent wind of their white covering of frost, 
         and they seemed to lean towards each other, black and ominous, in the fading light. 
         A vast silence reigned over the land. The land itself was a desolation, lifeless, without movement, 
@@ -42,7 +42,7 @@
         But under it all they were men, penetrating the land of desolation and mockery and silence, 
         puny adventurers bent on colossal adventure, 
         pitting themselves against the might of a world as remote and alien and pulseless as the abysses of space.',
-        'image' = 'images/the-road-ahead-img.jpg'
+        'image' => 'images/the-road-ahead-img.jpg'
     ];
 ?>
 
