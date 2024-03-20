@@ -2,7 +2,7 @@
 
 $posts = [
     [
-        'id' => 1,
+        'id' => 3,
         'background_post' => 'images/still-standing-tall-img.jpg',
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
@@ -11,7 +11,7 @@ $posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 2,
+        'id' => 4,
         'background_post' => 'images/sunny-side-up-img.jpg',
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you its going to be.',
@@ -20,7 +20,7 @@ $posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 3,
+        'id' => 5,
         'background_post' => 'images/water-falls-img.jpg',
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
@@ -29,7 +29,7 @@ $posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 4,
+        'id' => 6,
         'background_post' => 'images/throught-the-mist-img.jpg',
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
@@ -38,7 +38,7 @@ $posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 5,
+        'id' => 7,
         'background_post' => 'images/awaken-early-img.jpg',
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
@@ -47,7 +47,7 @@ $posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 6,
+        'id' => 8,
         'background_post' => 'images/try-it-always-img.jpg',
         'title' => 'Try it Always',
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
@@ -60,7 +60,7 @@ $posts = [
 
 $feature_posts = [
     [
-        'id' => 7,
+        'id' => 1,
         'background_post' => 'images/the-road-ahead-img.jpg',
         'tag_type' => 'none',
         'tag_text' => 'none',
@@ -71,7 +71,7 @@ $feature_posts = [
         'post_date' => 1443139200
     ],
     [
-        'id' => 8,
+        'id' => 2,
         'background_post' => 'images/from-top-down-img.jpg',
         'tag_type' => 'adventure',
         'tag_text' => 'Adventure',
@@ -144,7 +144,7 @@ $feature_posts = [
                 </div>
                 <?php 
                     foreach ($posts as $post) {
-                        include 'post_preview.php';
+                        include 'most_recent_post_preview.php';
                     }
                 ?>
             </div>
