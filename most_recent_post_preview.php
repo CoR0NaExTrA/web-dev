@@ -11,4 +11,5 @@
                 </div>
             </div>
         </div>
+        <a class="post_page-link" href='/post.php?id=<?= $post['id'] ?>'><span></span></a>
 </article>
