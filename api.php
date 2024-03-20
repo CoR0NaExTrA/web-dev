@@ -9,6 +9,7 @@
     $dataAsJson = file_get_contents("php://input");
     $dataAsArray = json_decode($dataAsJson, true);
     saveImage($dataAsArray['image']);
+    saveFile('data.json', $dataAsJson);
 
     function saveImage(string $imageBase64) {
     $imageBase64Array = explode(';base64,', $imageBase64);
