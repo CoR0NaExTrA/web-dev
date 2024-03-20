@@ -9,6 +9,6 @@
                 <img class="author-info__img" src="<?= $feature_post['img_author'] ?>" alt="img">
                 <span class="author-info__txt"><?= $feature_post['author'] ?></span>
             </div>
-            <span class="article-info__date"><?= $feature_post['post_date'] ?></span>
+            <span class="article-info__date"><?= date('m/d/Y', $feature_post['post_date'])?></span>
         </div>
 </article>

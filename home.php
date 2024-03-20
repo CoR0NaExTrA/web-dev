@@ -8,7 +8,7 @@ $posts = [
         'subtitle' => 'Life begins at the end of your comfort zone.',
         'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 2,
@@ -17,7 +17,7 @@ $posts = [
         'subtitle' => 'No place is ever as bad as they tell you its going to be.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 3,
@@ -26,7 +26,7 @@ $posts = [
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 4,
@@ -35,7 +35,7 @@ $posts = [
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
         'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 5,
@@ -44,7 +44,7 @@ $posts = [
         'subtitle' => 'Not all those who wander are lost.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 6,
@@ -53,7 +53,7 @@ $posts = [
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
 ];
 
@@ -68,7 +68,7 @@ $feature_posts = [
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
     [
         'id' => 8,
@@ -79,7 +79,7 @@ $feature_posts = [
         'subtitle' => 'Once a year, go someplace youve never been before.',
         'img_author' => 'images/william-wong-img.jpg',
         'author' => 'William Wong',
-        'post_date' => '1443139200'
+        'post_date' => 1443139200
     ],
 ];
 
