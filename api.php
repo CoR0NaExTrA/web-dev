@@ -18,7 +18,7 @@
     }
 
     function saveFile(string $file, string $data): void {
-        $myFile = fopen($file, 'w');
+        $myFile = fopen("/images".$file, 'w');
         if ($myFile) {
           $result = fwrite($myFile, $data);
           if ($result) {
