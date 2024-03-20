@@ -67,10 +67,10 @@
             </nav>
         </header>
         <?php
-                $postId = $_GET['id'];
-                echo "Post Id =  {$postId}";
-                include 'post_preview.php';
-            ?>
+            $postId = $_GET['id'];
+            echo "Post Id =  {$postId}";
+            include 'post_preview.php';
+        ?>
         <footer class="footer">
             <div class="footer-area">
                 <nav class="footer-navigate__list">

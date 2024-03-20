@@ -1,5 +1,30 @@
 <?php
 
+$feature_posts = [
+    [
+        'id' => 1,
+        'background_post' => 'images/the-road-ahead-img.jpg',
+        'tag_type' => 'none',
+        'tag_text' => 'none',
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'img_author' => 'images/mat-vogels-img.jpg',
+        'author' => 'Mat Vogels',
+        'post_date' => 1443139200
+    ],
+    [
+        'id' => 2,
+        'background_post' => 'images/from-top-down-img.jpg',
+        'tag_type' => 'adventure',
+        'tag_text' => 'Adventure',
+        'title' => 'From Top Down',
+        'subtitle' => 'Once a year, go someplace youve never been before.',
+        'img_author' => 'images/william-wong-img.jpg',
+        'author' => 'William Wong',
+        'post_date' => 1443139200
+    ],
+];
+
 $posts = [
     [
         'id' => 3,
@@ -53,32 +78,6 @@ $posts = [
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
         'img_author' => 'images/mat-vogels-img.jpg',
         'author' => 'Mat Vogels',
-        'post_date' => 1443139200
-    ],
-];
-
-
-$feature_posts = [
-    [
-        'id' => 1,
-        'background_post' => 'images/the-road-ahead-img.jpg',
-        'tag_type' => 'none',
-        'tag_text' => 'none',
-        'title' => 'The Road Ahead',
-        'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_author' => 'images/mat-vogels-img.jpg',
-        'author' => 'Mat Vogels',
-        'post_date' => 1443139200
-    ],
-    [
-        'id' => 2,
-        'background_post' => 'images/from-top-down-img.jpg',
-        'tag_type' => 'adventure',
-        'tag_text' => 'Adventure',
-        'title' => 'From Top Down',
-        'subtitle' => 'Once a year, go someplace youve never been before.',
-        'img_author' => 'images/william-wong-img.jpg',
-        'author' => 'William Wong',
         'post_date' => 1443139200
     ],
 ];
