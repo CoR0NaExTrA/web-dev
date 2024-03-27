@@ -11,5 +11,5 @@
         </div>
         <span class="article-info__date"><?= date('m/d/Y', $feature_post['post_date'])?></span>
     </div>
-    <a class="post_page-link" href='/post.php?id=<?= $feature_post['id'] ?>'><span></span></a>
+    <a class="post_link" href='/post.php?id=<?= $feature_post['id'] ?>'><span></span></a>
 </article>
