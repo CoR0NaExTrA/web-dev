@@ -1,8 +1,7 @@
 <?php
-
     $method = $_SERVER['REQUEST_METHOD'];
     if ($method != 'POST') {
-        echo '';
+        echo ''; //User friendly
         return;
     }
 
