@@ -387,6 +387,12 @@
     margin-right: 13px;
 }
 
+.post_link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
     height: 90px;
     background-image: url(../images/footer-background-img.jpg);
