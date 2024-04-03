@@ -296,6 +296,7 @@
 }
 
 .most-recent-posts {
+    position: relative;
     width: 67%;
     display: flex;
     flex-wrap: wrap;
@@ -388,6 +389,7 @@
 }
 
 .post_link{
+
     width: 100%;
     height: 100%;
 }
