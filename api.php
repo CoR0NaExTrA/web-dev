@@ -93,7 +93,7 @@ function closeDBConnection(mysqli $conn): void
 
 function postToDataBase(mysqli $conn, $info): void
 {
-  $sql = "INSERT INTO post (title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES 
+  $sql = "INSERT INTO post (title, subtitle, author, author_url, publish_date, image_url, featured, content, tag_type, tag_text) VALUES 
     ('{$info['title']}', '{$info['subtitle']}', '{$info['author']}', '{$info['author_url']}', '{$info['publish_date']}', 
     '{$info['image_url']}', {$info['featured']}, '{$info['content']}', '{$info['tag_type']}', '{$info['tag_text']}')";
 
