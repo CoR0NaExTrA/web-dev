@@ -97,7 +97,7 @@ function postToDataBase(mysqli $conn, $info): void
     ('{$info['title']}', '{$info['subtitle']}', '{$info['author']}', '{$info['author_url']}', '{$info['publish_date']}', 
     '{$info['image_url']}', {$info['featured']}, '{$info['content']}', '{$info['tag_type']}', '{$info['tag_text']}')";
 
-  if ($conn->query($sql) === TRUE) {
+  if ($conn->query($sql) = TRUE) {
     echo "New record created successfully";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
