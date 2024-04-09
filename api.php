@@ -1,7 +1,7 @@
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method != 'POST') {
-  eFFcho "Waiting for POST parametr";
+  echo "Waiting POST";
   return;
 }
 
