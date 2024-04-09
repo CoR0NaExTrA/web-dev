@@ -21,7 +21,7 @@ function closeDBConnection(mysqli $conn): void
 
 function getFeaturedPosts(mysqli $conn, &$feature_posts): void
 {
-    $sql = "SELECT *, UNIX_TIMESTAMP(publish_date) AS publish_date FROM post WHERE featured = 1";
+    $sql = "SELECT * FROM post WHERE featured = 1";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
@@ -32,7 +32,7 @@ function getFeaturedPosts(mysqli $conn, &$feature_posts): void
 
 function getMostRecentPosts(mysqli $conn, &$posts): void
 {
-    $sql = "SELECT *, UNIX_TIMESTAMP(publish_date) AS publish_date FROM post WHERE featured = 0";
+    $sql = "SELECT * FROM post WHERE featured = 0";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
