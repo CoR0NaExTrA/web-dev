@@ -14,7 +14,7 @@
                     <?= $post['author'] ?>
                 </span>
                 <span class="most-recent__author-info_date">
-                    <?= date("m/d/Y", $post['publish_date']) ?>
+                    <?= $post['publish_date'] ?>
                 </span>
             </div>
         </div>
