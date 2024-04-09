@@ -95,7 +95,7 @@ function getMostRecentPosts(mysqli $conn, &$posts): void
             <?php
             $feature_posts = [];
             $conn = createDBConnection();
-            getFeaturedPosts($conn, $featured_posts);
+            getFeaturedPosts($conn, $feature_posts);
             closeDBConnection($conn);
             foreach ($feature_posts as $feature_post) {
                 include 'feature_post_preview.php';
