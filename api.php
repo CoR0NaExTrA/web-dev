@@ -38,7 +38,9 @@ $info = [
   "publish_date" => $publishDate,
   "image_url" => 'images/' . $dataAsArray['img_name'] . '.' . $main_img_ext,
   "featured" => $dataAsArray['featured'],
-  "content" => $dataAsArray["content"]
+  "content" => $dataAsArray["content"],
+  "tag_type" => $dataAsArray["tag_type"],
+  "tag_text" => $dataAsArray["tag_text"]
 ];
 
 $conn = createDBConnection();
@@ -93,7 +95,7 @@ function postToDataBase(mysqli $conn, $info): void
 {
   $sql = "INSERT INTO post (title, subtitle, author, author_url, publish_date, image_url, featured, content) VALUES 
     ('{$info['title']}', '{$info['subtitle']}', '{$info['author']}', '{$info['author_url']}', '{$info['publish_date']}', 
-    '{$info['image_url']}', {$info['featured']}, '{$info['content']}')";
+    '{$info['image_url']}', {$info['featured']}, '{$info['content']}', '{$info['tag_type']}', '{$info['tag_text']}')";
 
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
