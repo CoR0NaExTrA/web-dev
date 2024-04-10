@@ -19,9 +19,9 @@ function closeDBConnection(mysqli $conn): void
     $conn->close();
 }
 
-function getPostContent(mysqli $conn, $idToFind, &$post): void
+function getPostContent(mysqli $conn, $idFind, &$post): void
 {
-    $sql = "SELECT *, UNIX_TIMESTAMP(publish_date) AS publish_date FROM post WHERE post_id =  $idToFind";
+    $sql = "SELECT * FROM post WHERE post_id =  $idFind";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         if ($row = $result->fetch_assoc()) {
@@ -29,7 +29,7 @@ function getPostContent(mysqli $conn, $idToFind, &$post): void
         }
     } else {
         $post = null;
-        echo "Post with id {$idToFind} has not been found!";
+        echo "Post with id {$idFind} has not been found!";
     }
 }
 ?>

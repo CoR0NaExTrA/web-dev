@@ -19,7 +19,7 @@ function closeDBConnection(mysqli $conn): void
     $conn->close();
 }
 
-function getFeaturedPosts(mysqli $conn, &$feature_posts): void
+function getFeaturePosts(mysqli $conn, &$feature_posts): void
 {
     $sql = "SELECT * FROM post WHERE featured = 1";
     $result = $conn->query($sql);
@@ -95,7 +95,7 @@ function getMostRecentPosts(mysqli $conn, &$posts): void
             <?php
             $feature_posts = [];
             $conn = createDBConnection();
-            getFeaturedPosts($conn, $feature_posts);
+            getFeaturePosts($conn, $feature_posts);
             closeDBConnection($conn);
             foreach ($feature_posts as $feature_post) {
                 include 'feature_post_preview.php';
