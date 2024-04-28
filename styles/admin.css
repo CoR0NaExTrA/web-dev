@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 74px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    height: 40px;
+}
+
+.header__logo {
+    display: flex;
+    width: 132px;
+    height: 26px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+
+}
+
+.header__menu-avatar {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: #DD783F;
+}
+
+.header__menu-avatar_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 32px;
+    height: 32px;
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__menu-icon {
+    display: flex;
+}
+
+.header__menu-icon_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.publishing-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    height: 68px;
+}
+
+.publishing-post__info {
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    height: 68px;
+}
+
+.publishing-post__info_title {
+    font-family: Lora, serif;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000000;
+}
+.publishing-post__info_subtitle {
+    font-family: Oxygen, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #2e2e2e;
+    opacity: 0.63;
+}
+
+.publishing-post__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 48px;
+    background-color: #DD783F;
+    border-radius: 3px;
+}
+
+.publishing-post__button_text {
+    color: #ffffff;
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    height: 1495px;
+    margin-top: 32px;
+}
+
+.main-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1132px;
+}
+
+.main-information__area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 93%;
+    height: 1036px;
+}
+
+.main-information__title, .content__title  {
+    display: flex;
+    width: 499px;
+    font-family: Lora, serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.main-information__post {
+    display: flex;
+    height: 966px;
+}
+
+.main-information__post_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 640px;
+    height: 966px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 347px;
+    margin-top: 16px;
+}
+
+.main-information__post_title, .main-information__post_subtitle, 
+.main-information__post_author, .main-information__post_date, 
+.main-information__post_author-img, .main-information__post_post-img,
+.main-information__post_preview-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
+    height: 61px;
+}
+
+.main-information__post_author-img {
+    height: 74px;
+}
+
+.main-information__post_post-img {
+    height: 209px;
+}
+
+.main-information__post_preview-img {
+    height: 199px;
+}
+
+.main-information__post_input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+    
+}
+
+.main-information__post_input:hover {
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.main-information__post_input:focus {
+    outline: none;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.main-information__post_text {
+    font-family: Oxygen, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #7A7A7A;
+}
+
+.main-information__post_author-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 560px;
+    height: 48px;
+}
+
+.main-information__post_avatar-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.main-information__post_avatar-img:hover {
+    border: dashed #d3d3d3;
+    border-radius: 24px;
+}
+
+.main-information__post_avatar-button, .main-information__post_post-img__button-title {
+    display: flex;
+    width: 53px;
+    height: 24px;
+}
+
+.main-information__post_avatar-btn {
+    z-index: 2;
+}
+
+.main-information__post_avatar-button_text, .main-information__post_post-img__button_text {
+    font-family: Oxygen, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    z-index: 1;
+}
+
+.main-information__post_post-img__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 160px;
+}
+
+.main-information__post_post-img__area:hover {
+    border: dashed #d3d3d3;
+    border-radius: 6px;
+}
+
+.main-information__post_post-img__button, .main-information__post_preview-img__button {
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+    height: 24px;
+}
+
+.main-information__post_post-img_description, .main-information__post_preview-img_description {
+    font-family: Oxygen, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #999999;
+}
+
+.main-information__post_preview-img__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296px;
+    height: 150px;
+}
+
+.main-information__post_preview-img__area:hover {
+    border: dashed #d3d3d3;
+    border-radius: 6px;
+}
+
+.content__post {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    height: 181px;
+}
+
+.content__post_title {
+    font-family: Oxygen, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #7A7A7A;
+}
+
+.content__post_input {
+    outline: none;
+    border: none;
+    width: 940px;
+    height: 160px;
+}

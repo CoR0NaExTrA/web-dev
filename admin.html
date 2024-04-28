@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>
+        Admin
+    </title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <img class="header__logo" src="images/Logo-author_Inversed.svg" alt="Escape.author"/>
+            <div class="header__menu">
+                <div class="header__menu-avatar">
+                    <span class="header__menu-avatar_text">N</span>
+                </div>
+                <div class="header__menu-icon_area">
+                    <img class="header__menu-icon" src="images/Icon-Escape.svg" alt="Icon-Escape"/>
+                </div>
+            </div>
+        </div>    
+    </header>
+    <div class="main-content">
+        <div class="publishing-post">
+            <div class="publishing-post__info">
+                <h1 class="publishing-post__info_title">New Post</h1>
+                <h6 class="publishing-post__info_subtitle">Fill out the form bellow and publish your article</h6>
+            </div>
+            <div class="publishing-post__button">
+                <span class="publishing-post__button_text">Publish</span>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="main-information">
+                <div class="main-information__area">
+                    <h2 class="main-information__title">Main Information</h2>
+                    <div class="main-information__post">
+                        <div class="main-information__post_data">
+                            <form class="main-information__post_title" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Title</h6>
+                                <input name="title" class="main-information__post_input" type="text"/>
+                            </form>
+                            <form class="main-information__post_subtitle" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Short description</h6>
+                                <input name="subtitle" class="main-information__post_input" type="text"/>
+                            </form>
+                            <form class="main-information__post_author" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Author name</h6>
+                                <input name="author_name" class="main-information__post_input" type="text"/>
+                            </form>
+                            <form class="main-information__post_author-img" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Author Photo</h6>
+                                <div class="main-information__post_author-avatar">   
+                                    <div class="main-information__post_avatar-img">
+                                        <img class="main-information__post_avatar-icon" src="images/camera.svg" alt="Author avatar"/>
+                                    </div>
+                                    <div class="main-information__post_avatar-button">
+                                        <label>
+                                            <span class="main-information__post_avatar-button_text">Upload</span>
+                                            <input type="file" class="main-information__post_avatar-btn" hidden/>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="main-information__post_date" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Publish Date</h6>
+                                <input name="publish_date" class="main-information__post_input" type="date" placeholder="m/d/Y" />
+                            </form>
+                            <form class="main-information__post_post-img" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Hero Image</h6>
+                                <div class="main-information__post_post-img__area">
+                                    <div class="main-information__post_post-img__button">
+                                        <img class="main-information__post_post-img__button-icon" src="images/camera.svg" alt="icon camera"/>
+                                        <div class="main-information__post_post-img__button-title">
+                                            <span class="main-information__post_post-img__button_text">Upload</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="main-information__post_post-img_description">Size up to 10mb. Format: png, jpeg, gif.</h6>
+                            </form>
+                            <form class="main-information__post_preview-img" method="post" action="https://localhost/api.php">
+                                <h6 class="main-information__post_text">Hero Image</h6>
+                                <div class="main-information__post_preview-img__area">
+                                    <div class="main-information__post_post-img__button">
+                                        <img src="images/camera.svg" alt="icon camera"/>
+                                        <div class="main-information__post_post-img__button-title">
+                                            <span class="main-information__post_post-img__button_text">Upload</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="main-information__post_post-img_description">Size up to 5mb. Format: png, jpeg, gif.</h6>
+                            </form>
+                        </div>
+                        <div class="main-information__post_preview">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h2 class="content__title">Content</h2>
+                <form class="content__post" method="post" action="https://localhost/api.php">
+                    <h6 class="content__post_title">Post content (plain text)</h6>
+                    <input name="content" class="content__post_input" type="text" placeholder="Type anything you want ..."/>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
