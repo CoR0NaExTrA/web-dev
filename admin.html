@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer type="text/javascript" src="/scripts/admin.js"></script>
     <title>
         Admin
     </title>
@@ -55,10 +56,9 @@
                     
                     <div class="form__box">
                         <label class="form__box_text" for="author-avatar">Author Photo</label>
-                        <div class="form__box_author-avatar">   
+                        <div id="author-avatar-img" class="form__box_author-avatar">   
                             <div class="form__box_avatar-img">
-                                <img class="form__box_avatar-icon" src="images/camera.svg" alt="Author avatar"/>
-                            </div>
+                                <img class="form__box_avatar-icon" src="images/camera.svg" alt="Author avatar"/></div>
                             <div class="form__box_avatar-button">
                                 <label>
                                     <span class="form__box_avatar-button_text">Upload</span>
@@ -75,23 +75,31 @@
                     
                     <div class="form__box">
                         <label class="form__box_text" for="post-img">Hero Image</label>
-                        <div class="form__box_post-img__area">
+                        <div id="big-img" class="form__box_post-img__area">
                             <div class="form__box_post-img__button">
                                 <img class="form__box_post-img__button-icon" src="images/camera.svg" alt="icon camera"/>
                                 <div class="form__box_post-img__button-title">
-                                    <label>
+                                    <label id="big-img-label">
                                         <span class="form__box_post-img__button_text">Upload</span>
                                         <input id="post-img" name="post-img" type="file" class="form__box_avatar-btn"/>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="form__box_post-img_description">Size up to 10mb. Format: png, jpeg, gif.</h6>
+                        <h6 class="form__box_post-img_description" id="post-img-desc">Size up to 10mb. Format: png, jpeg, gif.</h6>
+                        <div id="delete-post-img" class="delete-post-img">
+                            <label class="delete-post-img_label" for="post-img">
+
+                            </label>
+                            <label id="delete-big" class="label_remove">
+
+                            </label>
+                        </div>
                     </div>
 
                     <div class="form__box">
                         <label class="form__box_text" for="preview-img">Hero Image</label>
-                        <div class="form__box_preview-img__area">
+                        <div id="small-img" class="form__box_preview-img__area">
                             <div class="form__box_post-img__button">
                                 <img src="images/camera.svg" alt="icon camera"/>
                                 <div class="form__box_post-img__button-title">
@@ -117,10 +125,10 @@
                                 <div class="dot"></div>
                             </div>
                             <div class="preview__article_header">
-                                <h5 class="preview__article_header_title">New Post</h5>
-                                <h6 class="preview__article_header_subtitle">Please, enter any description</h6>
+                                <h5 class="preview__article_header_title" id="article-title-new">New Post</h5>
+                                <h6 class="preview__article_header_subtitle" id="article-subtitle-new">Please, enter any description</h6>
                             </div>
-                            <div class="preview__article_image"></div>
+                            <div class="preview__article_image" id="post-img-new"></div>
                         </div>
                     </div>
                     <h4 class="preview__post-card_title">Post card preview</h4>
@@ -128,15 +136,15 @@
                         <div class="preview__post-card_left-shadow"></div>
                         <div class="preview__post-card_bottom-shadow"></div>
                         <div class="preview__post-card_content">
-                            <div class="preview__post-card_image"></div>
+                            <div class="preview__post-card_image" id="preview-img-new"></div>
                             <div class="preview__post-card_header">
-                                <h5 class="preview__post-card_header_title">New Post</h5>
-                                <h6 class="preview__post-card_header_subtitle">Please, enter any description</h6>
+                                <h5 class="preview__post-card_header_title" id="post-card-title-new">New Post</h5>
+                                <h6 class="preview__post-card_header_subtitle" id="post-card-subtitle-new">Please, enter any description</h6>
                             </div>
                             <div class="preview__post-card_info">
-                                <div class="preview__post-card_info_image"></div>
-                                <span class="preview__post-card_info_author">Enter author name</span>
-                                <span class="preview__post-card_info_date">29/04/2024</span>
+                                <div class="preview__post-card_info_image" id="author-avatar-new"></div>
+                                <span class="preview__post-card_info_author" id="author-name-new">Enter author name</span>
+                                <span class="preview__post-card_info_date" id="publish_date-new">29/04/2024</span>
                             </div>
                         </div>
                     </div>
