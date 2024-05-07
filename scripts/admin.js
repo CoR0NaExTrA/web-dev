@@ -59,15 +59,142 @@ function copyImage(from, to) {
 function updateArticlePreview() {
     let postImage = document.getElementById('big-img-label');
     postImage.style.display = 'none';
-    let newUploadBtn = document.getElementById('');
+    let newUploadBtn = document.getElementById('delete-post-img');
     newUploadBtn.style.display = 'flex';
     let postImageDesc = document.getElementById('post-img-desc');
     postImageDesc.style.display = 'none';
-    let 
+    let blockBigMain = document.getElementById('big-img');
+    blockBigMain.style.border = '1px solid #d3d3d3';
 }
 
+function RemovePostImage() {
+    const bigImageMain = document.getElementById('big-img-label');
+    bigImageMain.style.display = 'flex';
 
+    const bigPhotoDiscription = document.getElementById('post-img-desc');
+    bigPhotoDiscription.style.display = 'flex';
 
+    const newUploadButton = document.getElementById('delete-post-img');
+    newUploadButton.style.display = 'none';
+
+    postImageInput.value = '';
+
+    const blockBigPreview = document.getElementById('post-img-new');
+    blockBigPreview.style.backgroundImage = 'none';
+
+    const blockBig = document.getElementById('big-img');
+    blockBig.style.backgroundImage = 'none';
+    blockBig.style.border = '1px dashed #d3d3d3';
+}
+
+function updatePostCardPreview() {
+    let postImage = document.getElementById('small-img-label');
+    postImage.style.display = 'none';
+    let newUploadBtn = document.getElementById('delete-preview-img');
+    newUploadBtn.style.display = 'flex';
+    let postImageDesc = document.getElementById('preview-img-desc');
+    postImageDesc.style.display = 'none';
+    let blockSmallMain = document.getElementById('small-img');
+    blockSmallMain.style.border = '1px solid #d3d3d3';
+}
+
+function RemovePreviewImage() {
+    let bigImageMain = document.getElementById('small-img-label');
+    bigImageMain.style.display = 'flex';
+
+    let bigPhotoDiscription = document.getElementById('preview-img-desc');
+    bigPhotoDiscription.style.display = 'flex';
+
+    let newUploadButton = document.getElementById('delete-preview-img');
+    newUploadButton.style.display = 'none';
+
+    previewImageInput.value = '';
+
+    let blockSmallPreview = document.getElementById('preview-img-new');
+    blockSmallPreview.style.backgroundImage = 'none';
+
+    let blockBig = document.getElementById('small-img');
+    blockBig.style.backgroundImage = 'none';
+    blockBig.style.border = '1px dashed #d3d3d3';
+}
+
+function updateAuthorImage() {
+    let postImage = document.getElementById('photo-label');
+    postImage.style.display = 'none';
+    let iconCamera = document.getElementById('icon-camera');
+    iconCamera.style.display = 'none';
+    let newUploadBtn = document.getElementById('delete-photo');
+    newUploadBtn.style.display = 'flex';
+    let blockSmallMain = document.getElementById('author-avatar-img');
+    blockSmallMain.style.border = '1px solid #d3d3d3';
+}
+
+function RemovePhoto() {
+    let bigImageMain = document.getElementById('photo-label');
+    bigImageMain.style.display = 'flex';
+
+    let iconCamera = document.getElementById('icon-camera');
+    iconCamera.style.display = 'flex';
+
+    let newUploadButton = document.getElementById('delete-photo');
+    newUploadButton.style.display = 'none';
+
+    authorAvatarInput.value = '';
+
+    let blockSmallPreview = document.getElementById('author-avatar-new');
+    blockSmallPreview.style.backgroundImage = 'none';
+
+    let blockBig = document.getElementById('author-avatar-img');
+    blockBig.style.backgroundImage = 'none';
+    blockBig.style.border = '1px dashed #d3d3d3';
+}
+
+function ValidateForm() {
+    const form = document.getElementById('main-form');
+    let isEmpty = false;
+
+    for (let i = 0; i < form.elements.length; i++) {
+        const element = form.elements[i];
+        if (element.value === '') {
+            isEmpty = true;
+            element.classList.remove('form__box_input');
+            element.classList.add('form__box_input-error');
+        }else{
+            element.classList.remove('form__box_input-error');
+            element.classList.add('form__box_input');  
+        }
+    }
+
+    const errBlock = document.getElementById('error_block');
+    const succBlock = document.getElementById('succ_block');
+    if (isEmpty) {
+        errBlock.style.display = 'flex';
+        succBlock.style.display = 'none';
+    } else {
+        errBlock.style.display = 'none';
+        succBlock.style.display = 'flex';
+        displayFormData();
+    }
+}
+
+function displayFormData() {
+    const formData = new FormData(document.getElementById('main-form'));
+    for (const [key, value] of formData.entries()) {
+        if (value instanceof File) {
+            readAndDisplayFile(value);
+        } else {
+            console.log(`${key}: ${value}`);
+        }
+    }
+}
+
+function readAndDisplayFile(file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        console.log(`${file.name}: ${e.target.result}`);
+    };
+    reader.readAsDataURL(file);
+}
 
 
 

@@ -35,6 +35,17 @@
             </div>
             <button type="button" class="publish-button" onclick="ValidateForm()">Publish</button>
         </div>
+
+        <div id="error_block" class="error_publishing">
+            <img class="error_publishing_image" src="images/alert-circle.svg" alt="icon error"/>
+            <p class="error_publishing_text">Whoops! Some fields need your attention :o</p>
+        </div>
+
+        <div id="succ_block" class="succ_publishing">
+            <img class="succ_publishing_image" src="images/check-circle.svg" alt="icon success"/>
+            <p class="succ_publishing_text">Publish Complete!</p>
+        </div>
+        
         <div class="main-information">
             <h2 class="main-information__title">Main Information</h2>
             <div class="main-information__forms">
@@ -52,17 +63,27 @@
                     <div class="form__box">
                         <label class="form__box_text" for="author_name">Author name</label>
                         <input id="author_name" name="author_name" class="form__box_input" type="text" placeholder=" "/>
+                        <h3 class="form__box_label-bottom-error">Author name is required.</h3>
                     </div>
                     
                     <div class="form__box">
                         <label class="form__box_text" for="author-avatar">Author Photo</label>
-                        <div id="author-avatar-img" class="form__box_author-avatar">   
-                            <div class="form__box_avatar-img">
-                                <img class="form__box_avatar-icon" src="images/camera.svg" alt="Author avatar"/></div>
-                            <div class="form__box_avatar-button">
-                                <label>
-                                    <span class="form__box_avatar-button_text">Upload</span>
-                                    <input id="author-avatar" name="author-avatar" type="file" class="form__box_avatar-btn"/>
+                        <div class="form__box_author-avatar">   
+                            <div id="author-avatar-img" class="form__box_avatar-img">
+                                <img id="icon-camera" class="form__box_avatar-icon" src="images/camera.svg" alt="Author avatar"/>
+                            </div>
+                            <input id="author-avatar" name="author-avatar" type="file" class="form__box_avatar-btn" accept=".jpg, .jpeg, .png, .gif"/>
+                            <label id="photo-label"for="author-avatar">
+                                <span class="form__box_avatar-button_text">Upload</span>
+                            </label>
+                            <div id="delete-photo" class="delete-photo">
+                                <img class="form__box__button-icon" src="images/camera.svg" alt="icon camera"/>
+                                <label class="delete-post-img_label" for="author-avatar">
+                                    <span class="form__box_post-img__button_text">Upload New</span>
+                                </label>
+                                <img class="form__box__button-icon" src="images/trash-2.svg" alt="icon trash"/>
+                                <label id="delete-big" class="label_remove" onclick="RemovePhoto()">
+                                    <span class="form__box__button_text_remove">Remove</span>
                                 </label>
                             </div>
                         </div>
@@ -77,22 +98,24 @@
                         <label class="form__box_text" for="post-img">Hero Image</label>
                         <div id="big-img" class="form__box_post-img__area">
                             <div class="form__box_post-img__button">
-                                <img class="form__box_post-img__button-icon" src="images/camera.svg" alt="icon camera"/>
                                 <div class="form__box_post-img__button-title">
-                                    <label id="big-img-label">
+                                    <input id="post-img" name="post-img" type="file" class="form__box_avatar-btn" accept=".jpg, .jpeg, .png, .gif"/>
+                                    <label class="form__box__button_label" for="post-img" id="big-img-label">
+                                        <img src="images/camera.svg" alt="icon camera"/>
                                         <span class="form__box_post-img__button_text">Upload</span>
-                                        <input id="post-img" name="post-img" type="file" class="form__box_avatar-btn"/>
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <h6 class="form__box_post-img_description" id="post-img-desc">Size up to 10mb. Format: png, jpeg, gif.</h6>
                         <div id="delete-post-img" class="delete-post-img">
+                            <img class="form__box__button-icon" src="images/camera.svg" alt="icon camera"/>
                             <label class="delete-post-img_label" for="post-img">
-
+                                <span class="form__box_post-img__button_text">Upload New</span>
                             </label>
-                            <label id="delete-big" class="label_remove">
-
+                            <img class="form__box__button-icon" src="images/trash-2.svg" alt="icon trash"/>
+                            <label id="delete-big" class="label_remove" onclick="RemovePostImage()">
+                                <span class="form__box__button_text_remove">Remove</span>
                             </label>
                         </div>
                     </div>
@@ -100,17 +123,27 @@
                     <div class="form__box">
                         <label class="form__box_text" for="preview-img">Hero Image</label>
                         <div id="small-img" class="form__box_preview-img__area">
-                            <div class="form__box_post-img__button">
-                                <img src="images/camera.svg" alt="icon camera"/>
+                            <div class=".form__box_preview-img__button">
                                 <div class="form__box_post-img__button-title">
-                                    <label>
+                                    <input id="preview-img" name="preview-img" type="file" class="form__box_avatar-btn" accept=".jpg, .jpeg, .png, .gif"/>
+                                    <label class="form__box__button_label" for="preview-img" id="small-img-label">
+                                        <img src="images/camera.svg" alt="icon camera"/>
                                         <span class="form__box_post-img__button_text">Upload</span>
-                                        <input id="preview-img" name="preview-img" type="file" class="form__box_avatar-btn"/>
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="form__box_post-img_description">Size up to 5mb. Format: png, jpeg, gif.</h6>
+                        <h6 class="form__box_post-img_description" id="preview-img-desc">Size up to 5mb. Format: png, jpeg, gif.</h6>
+                        <div id="delete-preview-img" class="delete-preview-img">
+                            <img class="form__box__button-icon" src="images/camera.svg" alt="icon camera"/>
+                            <label class="delete-preview-img_label" for="preview-img">
+                                <span class="form__box_preview-img__button_text">Upload New</span>
+                            </label>
+                            <img class="form__box__button-icon" src="images/trash-2.svg" alt="icon trash"/>
+                            <label id="delete-small" class="label_remove" onclick="RemovePreviewImage()">
+                                <span class="form__box__button_text_remove" >Remove</span>
+                            </label>
+                        </div>
                     </div>
                 </form>
                 <div class="preview">
