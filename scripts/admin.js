@@ -29,9 +29,14 @@ authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 
 authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 'author-avatar-img'));
 authorAvatarInput.addEventListener('change', () => updateAuthorImage());
 
+const formData = {
+    title: ""
+}
+
 function CopyText(from, i) {
     let elem = document.getElementById(i);
     elem.textContent = from.value;
+    formData.title = from.value;
 }
 
 function CopyDate(from, i) {
@@ -113,9 +118,9 @@ function RemovePreviewImage() {
     let blockSmallPreview = document.getElementById('preview-img-new');
     blockSmallPreview.style.backgroundImage = 'none';
 
-    let blockBig = document.getElementById('small-img');
-    blockBig.style.backgroundImage = 'none';
-    blockBig.style.border = '1px dashed #d3d3d3';
+    let blockSmall = document.getElementById('small-img');
+    blockSmall.style.backgroundImage = 'none';
+    blockSmall.style.border = '1px dashed #d3d3d3';
 }
 
 function updateAuthorImage() {
@@ -144,9 +149,9 @@ function RemovePhoto() {
     let blockSmallPreview = document.getElementById('author-avatar-new');
     blockSmallPreview.style.backgroundImage = 'none';
 
-    let blockBig = document.getElementById('author-avatar-img');
-    blockBig.style.backgroundImage = 'none';
-    blockBig.style.border = '1px dashed #d3d3d3';
+    let blockPhoto = document.getElementById('author-avatar-img');
+    blockPhoto.style.backgroundImage = 'none';
+    blockPhoto.style.border = '1px dashed #d3d3d3';
 }
 
 function ValidateForm() {
@@ -159,9 +164,9 @@ function ValidateForm() {
             isEmpty = true;
             element.classList.remove('form__box_input');
             element.classList.add('form__box_input-error');
-        }else{
+        } else {
             element.classList.remove('form__box_input-error');
-            element.classList.add('form__box_input');  
+            element.classList.add('form__box_input');
         }
     }
 
