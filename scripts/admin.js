@@ -29,14 +29,14 @@ authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 
 authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 'author-avatar-img'));
 authorAvatarInput.addEventListener('change', () => updateAuthorImage());
 
-function CopyText(from, on) {
-    let elem = document.getElementById(on);
+function CopyText(from, i) {
+    let elem = document.getElementById(i);
     elem.textContent = from.value;
 }
 
-function CopyDate(from, on) {
+function CopyDate(from, i) {
     const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-    var elem = document.getElementById(on);
+    var elem = document.getElementById(i);
     elem.textContent = (new Date(from.value)).toLocaleDateString("en-GB", options);
 }
 
