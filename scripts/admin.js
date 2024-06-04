@@ -213,9 +213,9 @@ function readAndDisplayFile(k, file) {
     reader.readAsDataURL(file);
 }
 
-async function sendForm(formDatas) {
+async function sendForm(data) {
     const res = await fetch('./api.php', {
         method: 'POST',
-        body: JSON.stringify(formDatas)
+        body: JSON.stringify(data)
     });
 }
