@@ -33,6 +33,8 @@ const formData = {
     title: ""
 }
 
+
+
 function CopyText(from, i) {
     let elem = document.getElementById(i);
     elem.textContent = from.value;
