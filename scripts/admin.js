@@ -1,11 +1,24 @@
 const titleInput = document.getElementById('title');
 const subtitleInput = document.getElementById('subtitle');
-const authorNameInput = document.getElementById('author_name');
+const authorNameInput = document.getElementById('author');
 const publishDateInput = document.getElementById('publish_date');
 
 const postImageInput = document.getElementById('post-img');
-const previewImageInput = document.getElementById('preview-img');
-const authorAvatarInput = document.getElementById('author-avatar');
+const previewImageInput = document.getElementById('image_url');
+const authorAvatarInput = document.getElementById('author_url');
+
+const formDatas = {
+    title: "",
+    subtitle: "",
+    author: "",
+    publish_date: "",
+    image_url: "", 
+    author_url: "", 
+    content: "",
+    featured: "0",
+    tag_type: "",
+    tag_text: ""
+}
 
 titleInput.addEventListener('change', () => CopyText(titleInput, 'article-title-new'));
 titleInput.addEventListener('change', () => CopyText(titleInput, 'post-card-title-new'));
@@ -29,14 +42,10 @@ authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 
 authorAvatarInput.addEventListener('change', () => copyImage(authorAvatarInput, 'author-avatar-img'));
 authorAvatarInput.addEventListener('change', () => updateAuthorImage());
 
-const formData = {
-    title: ""
-}
-
 function CopyText(from, i) {
     let elem = document.getElementById(i);
     elem.textContent = from.value;
-    formData.title = from.value;
+    //formData.title = from.value;
 }
 
 function CopyDate(from, i) {
@@ -186,20 +195,29 @@ function displayFormData() {
     const formData = new FormData(document.getElementById('main-form'));
     for (const [key, value] of formData.entries()) {
         if (value instanceof File) {
-            readAndDisplayFile(value);
+            readAndDisplayFile(key, value);
         } else {
-            console.log(`${key}: ${value}`);
+            //console.log(`${key}: ${value}`);
+            formDatas[key] = value;
         }
     }
 }
 
-function readAndDisplayFile(file) {
+function readAndDisplayFile(k, file) {
     const reader = new FileReader();
     reader.onload = function (e) {
-        console.log(`${file.name}: ${e.target.result}`);
+        //console.log(`${file.name}: ${e.target.result}`);
+        formDatas[k] = e.target.result;
+        console.log(formDatas);
     };
     reader.readAsDataURL(file);
 }
 
+async function sendForm(formDatas) {
+    const res = await fetch('./api.php', {
+        method: 'POST',
+        body: JSON.stringify(formDatas)
+    });
 
-
+    const resu = await res.json();
+}
