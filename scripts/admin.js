@@ -209,7 +209,6 @@ function readAndDisplayFile(k, file) {
     reader.onload = function (e) {
         //console.log(`${file.name}: ${e.target.result}`);
         formDatas[k] = e.target.result;
-        console.log(formDatas);
     };
     reader.readAsDataURL(file);
 }
