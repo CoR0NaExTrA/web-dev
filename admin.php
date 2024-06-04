@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <script defer type="text/javascript" src="/scripts/admin.js"></script>
+    <script defer type="text/javascript" src="localhost/scripts/admin.js"></script>
     <title>
         Admin
     </title>
