@@ -218,6 +218,4 @@ async function sendForm(formDatas) {
         method: 'POST',
         body: JSON.stringify(formDatas)
     });
-
-    const resu = await res.json();
 }
