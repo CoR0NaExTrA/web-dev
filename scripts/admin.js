@@ -201,6 +201,7 @@ function displayFormData() {
             formDatas[key] = value;
         }
     }
+    sendForm(formDatas);
 }
 
 function readAndDisplayFile(k, file) {
