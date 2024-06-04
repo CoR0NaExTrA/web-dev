@@ -39,7 +39,7 @@
                 <h1 class="publishing-post__info_title">New Post</h1>
                 <h4 class="publishing-post__info_subtitle">Fill out the form bellow and publish your article</h4>
             </div>
-            <button type="button" class="publish-button" onclick="ValidateForm()">Publish</button>
+            <button type="submit" class="publish-button" onclick="ValidateForm()">Publish</button>
         </div>
 
         <div id="error_block" class="error_publishing">
@@ -69,27 +69,27 @@
                     </div>
 
                     <div class="form__box">
-                        <label class="form__box_text" for="author_name">Author name</label>
-                        <input id="author_name" name="author_name" class="form__box_input" type="text"
+                        <label class="form__box_text" for="author">Author name</label>
+                        <input id="author" name="author" class="form__box_input" type="text"
                             placeholder=" " />
                         <h3 class="form__box_label-bottom-error">Author name is required.</h3>
                     </div>
 
                     <div class="form__box">
-                        <label class="form__box_text" for="author-avatar">Author Photo</label>
+                        <label class="form__box_text" for="author_url">Author Photo</label>
                         <div class="form__box_author-avatar">
                             <div id="author-avatar-img" class="form__box_avatar-img">
                                 <img id="icon-camera" class="form__box_avatar-icon" src="images/camera.svg"
                                     alt="Author avatar" />
                             </div>
-                            <input id="author-avatar" name="author-avatar" type="file" class="form__box_avatar-btn"
+                            <input id="author_url" name="author_url" type="file" class="form__box_avatar-btn"
                                 accept=".jpg, .jpeg, .png, .gif" />
-                            <label id="photo-label" for="author-avatar">
+                            <label id="photo-label" for="author_url">
                                 <span class="form__box_avatar-button_text">Upload</span>
                             </label>
                             <div id="delete-photo" class="delete-photo">
                                 <img class="form__box__button-icon" src="images/camera.svg" alt="icon camera" />
-                                <label class="delete-post-img_label" for="author-avatar">
+                                <label class="delete-post-img_label" for="author_url">
                                     <span class="form__box_post-img__button_text">Upload New</span>
                                 </label>
                                 <img class="form__box__button-icon" src="images/trash-2.svg" alt="icon trash" />
@@ -102,8 +102,7 @@
 
                     <div class="form__box">
                         <label class="form__box_text">Publish Date</label>
-                        <input id="publish_date" name="publish_date" class="form__box_input" type="date"
-                            placeholder="mm/dd/yyyy" />
+                        <input id="publish_date" name="publish_date" class="form__box_input" type="date" placeholder="mm/dd/yyyy" />
                     </div>
 
                     <div class="form__box">
@@ -135,13 +134,13 @@
                     </div>
 
                     <div class="form__box">
-                        <label class="form__box_text" for="preview-img">Hero Image</label>
+                        <label class="form__box_text" for="image_url">Hero Image</label>
                         <div id="small-img" class="form__box_preview-img__area">
                             <div class=".form__box_preview-img__button">
                                 <div class="form__box_post-img__button-title">
-                                    <input id="preview-img" name="preview-img" type="file" class="form__box_avatar-btn"
+                                    <input id="image_url" name="image_url" type="file" class="form__box_avatar-btn"
                                         accept=".jpg, .jpeg, .png, .gif" />
-                                    <label class="form__box__button_label" for="preview-img" id="small-img-label">
+                                    <label class="form__box__button_label" for="image_url" id="small-img-label">
                                         <img src="images/camera.svg" alt="icon camera" />
                                         <span class="form__box_post-img__button_text">Upload</span>
                                     </label>
@@ -152,7 +151,7 @@
                             jpeg, gif.</h6>
                         <div id="delete-preview-img" class="delete-preview-img">
                             <img class="form__box__button-icon" src="images/camera.svg" alt="icon camera" />
-                            <label class="delete-preview-img_label" for="preview-img">
+                            <label class="delete-preview-img_label" for="image_url">
                                 <span class="form__box_preview-img__button_text">Upload New</span>
                             </label>
                             <img class="form__box__button-icon" src="images/trash-2.svg" alt="icon trash" />
