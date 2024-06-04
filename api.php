@@ -22,7 +22,7 @@ if (!(is_numeric($publishDateUnix) && (int) $publishDateUnix == $publishDateUnix
 } else {
   echo 'Дата успешно сохранена!';
 }
-$publishDate = date("Y-m-d", $publishDate);
+$publishDateUnix = date("Y-m-d", $publishDateUnix);
 
 //Сохраняем картинки автора и основную картинку
 $author_img_ext = '';
