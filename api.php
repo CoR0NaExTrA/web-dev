@@ -14,14 +14,14 @@ $dataAsJson = file_get_contents("php://input");
 $dataAsArray = json_decode($dataAsJson, true);
 
 // Проверяем дату-время
-$publishDate = $dataAsArray['publish_date'];
-/* if (!(is_numeric($publishDate) && (int) $publishDate == $publishDate)) {
+$publishDate = strtotime($dataAsArray['publish_date']);
+ if (!(is_numeric($publishDate) && (int) $publishDate == $publishDate)) {
   echo 'Ошибка при вводе даты! Вводите дату в формате UNIX TIMESTAMP';
   return;
 } else {
   echo 'Дата успешно сохранена!';
 }
-$publishDateUnix = date("Y-m-d", $publishDateUnix); */
+$publishDate = date("Y-m-d", $publishDate); 
 
 //Сохраняем картинки автора и основную картинку
 $author_img_ext = '';
