@@ -15,7 +15,8 @@ $dataAsArray = json_decode($dataAsJson, true);
 
 // Проверяем дату-время
 $publishDate = strtotime($dataAsArray['publish_date']);
- if (!(is_numeric($publishDate) && (int) $publishDate == $publishDate)) {
+if (!(is_numeric($publishDate) && (int) $publishDate == $publishDate)) {
+  echo $publishDate;
   echo 'Ошибка при вводе даты! Вводите дату в формате UNIX TIMESTAMP';
   return;
 } else {
