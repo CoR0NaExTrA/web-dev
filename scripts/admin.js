@@ -214,9 +214,11 @@ function readAndDisplayFile(k, file) {
 }
 
 async function sendForm(data) {
-    const res = await fetch('./api.php', {
+    const response = await fetch('./api.php', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
     });
+    if (response.ok) {
+        const json = await response.json();
+    } 
 }
