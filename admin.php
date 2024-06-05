@@ -39,7 +39,7 @@
                 <h1 class="publishing-post__info_title">New Post</h1>
                 <h4 class="publishing-post__info_subtitle">Fill out the form bellow and publish your article</h4>
             </div>
-            <button type="submit" class="publish-button" onclick="ValidateForm()">Publish</button>
+            <button class="publish-button" onclick="ValidateForm()">Publish</button>
         </div>
 
         <div id="error_block" class="error_publishing">
